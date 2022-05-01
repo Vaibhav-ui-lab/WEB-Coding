@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+        .upper{
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+        p{
+            color: white;
+            font-size: 15px;
+            line-height: 30px;
+            padding-right: 10px;
+        }
+        .upper>button{
+            height: 40px;
+            width: 100px;
+            color: red;
+            border: 0px;
+            border-radius: 5px;
+            background-color: black;
+        }
+        .lower{
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: space-around;
+            /* border: 1px solid red; */
+        }
+        .lower>div{
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+            /* border: 1px solid red; */
+        }
+        .lower>div:nth-child(1){
+            flex-grow: 3;
+            justify-content: left;
+            padding-left: 70px;
+        }
+        .lower>div:nth-child(2){
+            flex-grow: 2;
+            justify-content: space-around;
+        }
+        h4{
+            font-size: 15px;
+        }
+        .lower>div:nth-child(3){
+            flex-grow: 1;
+        }
+        .lower button{
+            height: 50px;
+            width: 80px;
+            font-size: 15px;
+            color: red;
+            border-radius: 5px;
+            border: 1px solid red;
+            background-color: white;
+        }
+        img{
+            height: 60px;
+            width: 110px;
+            align-content: center;
+            /* border: 1px solid red; */
+        }
+        svg{
+            height: 20px;
+            width: 20px;
+            margin-left: 15px;
+            /* border: 1px solid red; */
+        }
+        .s{
+            display: flex;
+            flex-direction: row;
+        }
+        button:hover{
+            background-color: rgb(255, 227, 232);
+        }
+    </style>
+</head>
+    <body>
+        <div class="upper">
+            <p>Register for The Coding Classroom and learn the basics of web development for free.</p>
+            <button><b>REGISTER ></b></button>
+        </div>
+        <div class="lower">
+            <div>
+                <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="masai">
+            </div>
+            <div>
+                <div class="s">
+                    <h4><b>COURSES</b></h4>
+                    <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-n059si" aria-hidden="true"><path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg>
+                </div>
+                <h4>FEES & ISA</h4>
+                <h4>ABOUT US</h4>
+                <h4>HIRE FROM US</h4>
+                <h4>FAQ</h4>
+                <h4>EVENTS</h4>
+            </div>
+            <div>
+                <button><b>LOGIN</b></button>
+            </div>
+        </div>        
+    </body>
+</html>

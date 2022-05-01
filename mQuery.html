@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+        #parent{
+            display: grid;
+            grid-template-columns: repeat(4,200px);
+            grid-template-rows: 50px 200px;
+            gap: 20px;
+            justify-content: center;
+            grid-template-areas:
+            "nav nav nav nav"
+            "b1 b2 b3 b4";
+        }
+        #parent>div{
+            padding-left: 10px;
+            font-size: 20px;
+        }
+        #parent>div:nth-child(1){
+            grid-area: nav;
+            font-size: 30px;
+            background-color: yellow;
+        }
+        #parent>div:nth-child(2){
+            grid-area: b1;
+            background-color: red;
+        }
+        #parent>div:nth-child(3){
+            grid-area: b2;
+            background-color: green;
+        }
+        #parent>div:nth-child(4){
+            grid-area: b3;
+            background-color: blue;
+        }
+        #parent>div:nth-child(5){
+            grid-area: b4;
+            background-color: gray;
+        }
+
+        @media all and (min-width: 451px) and (max-width: 750px){
+            #parent{
+                grid-template-columns: repeat(2,200px);
+                grid-template-rows: 50px 200px 200px;
+                grid-template-areas:
+                "nav nav"
+                "b1 b3"
+                "b2 b4";
+            }
+        }
+
+        @media all and (min-width: 100px) and (max-width: 450px){
+            #parent{
+                grid-template-columns: repeat(1,200px);
+                grid-template-rows: 50px 100px 100px 100px 100px;
+                gap: 10px;
+                grid-template-areas:
+                "nav"
+                "b1"
+                "b4"
+                "b2"
+                "b3";
+            }
+        }
+    </style>
+</head>
+    <body>
+        <div id="parent">
+            <div>Navigation</div>
+            <div>Box 1</div>
+            <div>Box 2</div>
+            <div>Box 3</div>
+            <div>Box 4</div>
+        </div>
+    </body>
+</html>

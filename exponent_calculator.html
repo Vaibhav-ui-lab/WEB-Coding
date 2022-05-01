@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="num1" type="number" placeholder="number">
+    <input id="num2" type="number" placeholder="raise to the power">
+    <button>Click here to find the exponent!</button>
+    <p>result will be shown here!</p>
+</body>
+</html>
+
+<script>
+    document.querySelector("button").addEventListener("click",calc);
+    function calc(){
+        var a = document.querySelector("#num1").value;
+        var b = document.querySelector("#num2").value;
+        var bag = a + " * " + b;
+        alert(bag);
+        var result = document.querySelector("p");
+        var out = 1;
+        for(var i=0;i<b;i++)
+        {
+            out = out*a;
+        }
+        result.innerText = out;
+    }
+
+</script>

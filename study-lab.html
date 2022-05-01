@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+        .up{
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+        .up>div{
+            display: flex;
+            flex-direction: row;
+        }
+        .head{
+            margin-left: 100px;
+            align-items: center;
+            background-color: blueviolet;
+        }
+        .head>h1{
+            color: white;
+            width: 160px;
+            font-size: 25px;
+            text-align: center;
+        }
+        .rest{
+            margin-right: 150px;
+            align-items: center;
+        }
+        .rest>p{
+            color: rgb(63, 63, 63);
+            width: 90px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .rest>p:first-child{
+            color: #4986fc;
+        }
+        .down{
+            height: 600px;
+            width: 100%;
+            display: flex;
+            /* border: 1px solid red; */
+        }
+        .down>div{
+            width: 50%;
+            height: 100%;
+            /* border: 1px solid red; */
+        }
+        .cards{
+            display: flex;
+            flex-wrap: wrap;
+            padding-right: 100px;
+            justify-content: center;
+            align-content: center;
+            gap: 30px;
+        }
+        .cards>div{
+            width: 40%;
+            height: 270px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            padding-left: 100px;
+            padding-right: 50px;
+            justify-content: space-around;
+        }
+        h1{
+            line-height: 45px;
+        }
+        h3{
+            width: 300px;
+            line-height: 30px;
+            font-weight: 100;
+            color: rgb(78, 78, 78);
+        }
+        h4{
+            color: #4986fc;
+            margin-top: 60px;
+            font-size: 15px;
+            margin-bottom: -15px;
+        }
+        p{
+            color: grey;
+            font-size: 18px;
+            line-height: 30px;
+        }
+        .content>div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .content>div>img{
+            height: 110px;
+            width: 200px;
+            padding-right: 10px;
+        }
+        h2{
+            font-size: 20px;
+            font-weight: 100;
+            margin: 20px 20px 20px 20px;
+        }
+        .cards p{
+            margin-left: 20px;
+        }
+        .cards img{
+            height: 50px;
+            width: 50px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+        .content h1{
+            color: rgb(48, 48, 48);
+        }
+    </style>
+</head>
+    <body>
+        <div class="up">
+            <div class="head">
+                <h1>StudyLab</h1>
+            </div>
+            <div class="rest">
+                <p>Home</p>
+                <p>About</p>
+                <p>Course</p>
+                <p>Instructor</p>
+                <p>Blog</p>
+                <p>Contact</p>
+            </div>
+        </div>
+        <div class="down">
+            <div class="content">
+                <h4>WELCOME TO STUDYLAB</h4>
+                <h1>We Are StudyLab An Online Learning Center</h1>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                <div>
+                    <img src="https://technext.github.io/studylab/images/about.jpg" alt="img">
+                    <h3>Learn anything from StudyLab, Watch video</h3>
+                </div>
+            </div>
+            <div class="cards">
+                <div>
+                    <img src="https://cdn-icons-gif.flaticon.com/6172/6172532.gif" alt="img">
+                    <h2>Top Quality Content</h2>
+                    <p>A small river named Duden flows by their place and supplies</p>
+                </div>
+                <div>
+                    <img src="https://cdn-icons-gif.flaticon.com/6172/6172524.gif" alt="img">
+                    <h2>Highly Skilled Instructor</h2>
+                    <p>A small river named Duden flows by their place and supplies</p>
+                </div>
+                <div>
+                    <img src="https://cdn-icons-gif.flaticon.com/6454/6454239.gif" alt="img">
+                    <h2>World Class & Quiz</h2>
+                    <p>A small river named Duden flows by their place and supplies</p>
+                </div>
+                <div>
+                    <img src="https://cdn-icons-gif.flaticon.com/6172/6172530.gif" alt="img">
+                    <h2>Get Certified</h2>
+                    <p>A small river named Duden flows by their place and supplies</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

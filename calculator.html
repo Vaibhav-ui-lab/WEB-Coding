@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-size: 50px;
+            margin-top: 40px;
+            color: teal;
+            text-align: center;
+        }
+
+        #box{
+            width: 30%;
+            height: 350px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 5px;
+            margin: auto;
+            margin-top: 50px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+
+        #box > div:nth-child(1){
+            width: 70%;
+            height: 55px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        #box > div:nth-child(2){
+            width: 70%;
+            height: 70%;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        #tile{
+            display: flex;
+            text-align: center;
+        }
+
+        div > h2{
+            width: 60px;
+            height: 43px;
+            margin: 0px 14px 10px 0px;
+            border-radius: 5px;
+            padding-top: 16px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        #tile > div:nth-child(4) > h2{
+            color: white;
+            background-color: black;
+        }
+
+        .red{
+            color: white;
+            background-color: red;
+        }
+
+        .black{
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+    <body>
+        <h1>Masai Calculator</h1>
+        <div id="box">
+            <div></div>
+            <div id="tile">
+                <div>
+                    <h2>1</h2>
+                    <h2>4</h2>
+                    <h2>7</h2>
+                    <h2 class="red">C</h2>
+                </div>
+                <div>
+                   <h2>2</h2>
+                   <h2>5</h2>
+                   <h2>8</h2>
+                   <h2>0</h2>
+                </div>
+                <div>
+                    <h2>3</h2>
+                    <h2>6</h2>
+                    <h2>9</h2>
+                    <h2 class="black">=</h2>
+                </div>
+                <div>
+                    <h2>+</h2>
+                    <h2>-</h2>
+                    <h2>x</h2>
+                    <h2>/</h2>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
