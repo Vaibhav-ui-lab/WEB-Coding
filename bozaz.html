@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+        #cards{
+            display: grid;
+            padding: 50px;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: auto;
+            gap: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <select name="category" id="category">
+            <option value="Electronics">Electronics</option>
+            <option value="Furniture">Furniture</option>
+            <option value="Home_appliance">Home appliance</option>
+            <option value="Books">Books</option>
+        </select>
+        <input type="text" id="title" placeholder="title">
+        <input type="text" id="description" placeholder="description">
+        <input type="number" id="price" placeholder="price">
+        <input type="submit">
+        <select name="filter" id="filter">
+            <option value="Filter">Filter</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Furniture">Furniture</option>
+            <option value="Home_appliance">Home appliance</option>
+            <option value="Books">Books</option>
+        </select>
+    </form>
+    <div id="cards">
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector("form").addEventListener("submit",myFun);
+    function myFun(){
+        event.preventDefault();
+        var cat = document.querySelector("#category").value;
+        var title = document.querySelector("#title").value;
+        var des = document.querySelector("#description").value;
+        var price = document.querySelector("#price").value;
+
+        var div = document.createElement("div");
+
+        var h2 = document.createElement("h2");
+        h2.innerText = cat;
+
+        var p1 = document.createElement("p");
+        p1.innerText = title;
+
+        var p2 = document.createElement("p");
+        p2.innerText = des;
+
+        var p3 = document.createElement("p");
+        p3.innerText = price;
+
+        var del = document.createElement("button");
+        del.innerText = "Delete";
+        del.addEventListener("click",deleted);
+        function deleted(){
+            div.remove();
+        }
+
+        var filter = document.createElement("#filter");
+        filter.addEventListener()
+        div.append(h2,p1,p2,p3,del);
+        document.querySelector("#cards").append(div);
+    }
+</script>
